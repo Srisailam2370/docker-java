@@ -11,7 +11,7 @@ ARG JAR_FILE=target/spring-boot-web.jar
 WORKDIR /opt/app
 
 # cp target/spring-boot-web.jar /opt/app/app.jar
-COPY ${JAR_FILE} app.jar
+COPY target/spring-boot-web.jar /opt/app/app.jar
 
 # java -jar /opt/app/app.jar
 ENTRYPOINT ["java","-jar","app.jar"]
